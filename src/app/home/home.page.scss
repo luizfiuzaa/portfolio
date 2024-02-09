@@ -1,27 +1,30 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+.profile_desc{
+  margin-bottom: 2px solid red;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+h1{
+  font-size: 3em;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-text{
+  font-size: 1.3em;
 }
 
-#container a {
-  text-decoration: none;
+.profile_pic{
+  border-radius: 100%;
+  padding: 3px;
+  border: 3px solid var(--ion-color-success);
 }
+
+.about_me>p{
+  font-size: 1.3em;
+}
+
+
+// ion-row{
+//   background: red;
+// }
+
+// ion-col{
+//   background: greenyellow;
+// }
