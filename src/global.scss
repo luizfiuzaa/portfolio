@@ -27,6 +27,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-*{
-  font-family: 'Ubuntu', sans-serif;
+*{ font-family: 'Ubuntu', sans-serif; }
+
+.ion-color-orange {
+	--background: var(--ion-color-orange);
+	--color: var(--ion-color-orange-contrast);
+	--ion-color-shade: var(--ion-color-orange-shade);
+	--background-hover: var(--ion-color-orange-tint);
+  transition: ease .5s;
 }

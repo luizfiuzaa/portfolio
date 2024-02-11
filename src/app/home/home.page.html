@@ -1,268 +1,477 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title> luizfiuzaa </ion-title>
-    <ion-buttons slot="secondary">
+    <ion-title
+      ><ion-buttons>
+        <ion-button>
+          Luiz Fiuza
+          <ion-icon
+            slot="end"
+            color="primary"
+            name="checkmark-circle"
+          ></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-title>
+    <ion-buttons slot="primary">
       <ion-button>
-        <ion-icon slot="icon-only" name="logo-linkedin"></ion-icon>
-      </ion-button>
-      <ion-button>
-        <ion-icon slot="icon-only" name="logo-github"></ion-icon>
-      </ion-button>
+        <ion-toggle
+          [enableOnOffLabels]="true"
+          [(ngModel)]="themeToggle"
+          (ionChange)="toggleChange($event)"
+          labelPlacement="start"
+        >
+          🌗
+        </ion-toggle></ion-button
+      >
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-col class="profile_desc" size="12">
-    <ion-row>
-      <ion-col size="3">
-        <img
-          class="profile_pic"
-          src="https://avatars.githubusercontent.com/u/96220499?v=4"
-          alt="imagem de um jovem de óculos com a armação preta, cabelo loiro, de uniforme escolar preto, sorrindo para a câmera com um crachá de identificação da campus party em 2023"
-        />
-      </ion-col>
-      <ion-col size="9">
-        <ion-row class="ion-justify-content-center">
-          <h1>Luiz Fiuza B. Freitas</h1>
-        </ion-row>
-      </ion-col>
-    </ion-row>
-
-    <ion-row>
+  <ion-col size="12">
+    <ion-row class="ion-justify-content-center">
       <ion-col size="12">
-        <ion-row>
-          <ion-col size="4">
-            <ion-button size="default" color="success" expand="block">
-              Baixar CV
-              <ion-icon slot="end" name="cloud-download"></ion-icon>
-            </ion-button>
-          </ion-col>
+        <ion-card>
+          <ion-row>
+            <ion-col size="12" sizeMd="3">
+              <img
+                class="profile_pic"
+                src="https://avatars.githubusercontent.com/u/96220499?v=4"
+                alt="Foto de Luiz Fiuza sorrindo para a foto sentado em uma cadeira verde da XT Racer, usando um óculos de armação preta juntamente com o uniforme preto da Etec e em seu pescoço um crachá de identificação da Campus Party Brasil"
+              />
 
-          <ion-col size="4">
-            <ion-button size="default" color="primary" expand="block">
-              Contato
-              <ion-icon slot="end" name="mail"></ion-icon>
-            </ion-button>
-          </ion-col>
+              <ion-card-header>
+                <ion-card-title>Luiz Fiuza B. Freitas</ion-card-title>
+                <ion-card-subtitle class="ion-text-start">
+                  Desenvolvedor Front-End | Designer | Técnico em Desenvolvimento de
+                  Sistemas
+                </ion-card-subtitle>
+              </ion-card-header>
 
-          <ion-col size="4">
-            <ion-button size="default" color="medium" expand="block">
-              <ion-icon slot="icon-only" name="share-social"></ion-icon>
-            </ion-button>
-          </ion-col>
-        </ion-row>
+              <ion-list lines="full">
+                <ion-list-header>
+                  <ion-label>Links/Contato/Currículo</ion-label>
+                </ion-list-header>
+
+                <ion-item
+                  href="https://www.linkedin.com/in/luiz-fiuza-/"
+                  target="_blank"
+                >
+                  <ion-icon color="dark" name="logo-github"></ion-icon>
+                  /luizfiuzaa
+                </ion-item>
+
+                <ion-item href="https://github.com/luizfiuzaa" target="_blank">
+                  <ion-icon color="primary" name="logo-linkedin"></ion-icon>
+                  /luiz-fiuza-
+                </ion-item>
+
+                <ion-item href="mailto:luizfiuza.b@gmail.com" target="_blank">
+                  <ion-icon color="secondary" name="mail"></ion-icon>
+                  luizfiuza.b&#64;gmail.com
+                </ion-item>
+
+                <ion-item
+                  lines="none"
+                  href="https://www.linkedin.com/posts/luiz-fiuza-_angular-ionic-php-activity-7135078243274997762-1ugx?utm_source=share&utm_medium=member_desktop"
+                  target="_blank"
+                >
+                  <ion-button expand="block" size="default" color="success">
+                    Download CV
+                    <ion-icon slot="end" name="cloud-download"></ion-icon>
+                  </ion-button>
+                </ion-item>
+              </ion-list>
+            </ion-col>
+
+            <ion-col size="12" sizeMd="9">
+              <ion-card-title>
+                <ion-buttons
+                  class="ion-align-self-center ion-justify-content-center ion-margin-top"
+                >
+                  <ion-button
+                    ><ion-icon
+                      slot="start"
+                      size="default"
+                      name="person"
+                    ></ion-icon>
+
+                    <ion-title>Sobre</ion-title>
+
+                    <ion-icon
+                      slot="end"
+                      size="default"
+                      name="person"
+                    ></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+              </ion-card-title>
+              <ion-row class="ion-align-self-center ion-justify-content-center">
+                <ion-col size="12" sizeMd="6">
+                  <ion-card-content class="about-me-info">
+                    👋 Olá! Me chamo Luiz Fiuza e sou Desenvolvedor Front-End e
+                    também Técnico em Desenvolvimento de Sistemas. Sempre fui
+                    interessado pela tecnologia ao todo, me identifico com a
+                    função de Designer e Front-End Developer. Cursei meu técnico
+                    na Etec e atualmente estou estudando Análise e
+                    Desenvolvimento de Sistemas na Fatec.
+                  </ion-card-content>
+                </ion-col>
+              </ion-row>
+
+              <ion-card-title>
+                <ion-buttons
+                  class="ion-align-self-center ion-justify-content-center ion-margin-top about-me-title"
+                >
+                  <ion-button
+                    ><ion-icon
+                      slot="start"
+                      size="default"
+                      name="build"
+                    ></ion-icon>
+                    <ion-title>Tecnologias</ion-title>
+                    <ion-icon slot="end" size="default" name="build"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+              </ion-card-title>
+              <ion-card-content class="about-me-info">
+                <ion-row class="ion-justify-content-center">
+                  <ion-col size="12" sizeMd="6">
+                    <ion-button color="danger">
+                      <ion-icon slot="start" name="logo-angular"></ion-icon>
+                      Angular
+                    </ion-button>
+
+                    <ion-button color="primary">
+                      <ion-icon slot="start" name="logo-ionic"></ion-icon>
+                      Ionic
+                    </ion-button>
+
+                    <ion-button color="dark">
+                      <ion-icon slot="start" name="logo-github"></ion-icon>
+                      Git/Github
+                    </ion-button>
+
+                    <ion-button color="tertiary">
+                      <ion-icon slot="start" name="logo-figma"></ion-icon>
+                      Figma
+                    </ion-button>
+
+                    <ion-button color="primary">
+                      <ion-icon slot="start" name="logo-css3"></ion-icon>
+                      CSS
+                    </ion-button>
+
+                    <ion-button class="ion-color-orange">
+                      <ion-icon slot="start" name="logo-html5"></ion-icon>
+                      HTML
+                    </ion-button>
+
+                    <ion-button color="warning">
+                      <ion-icon slot="start" name="logo-javascript"></ion-icon>
+                      JavaScript
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+              </ion-card-content>
+
+              <ion-card-title>
+                <ion-buttons
+                  class="ion-align-self-center ion-justify-content-center ion-margin-top about-me-title"
+                >
+                  <ion-button
+                    ><ion-icon
+                      slot="start"
+                      size="default"
+                      name="book"
+                    ></ion-icon>
+                    <ion-title>Estudando</ion-title>
+                    <ion-icon slot="end" size="default" name="book"></ion-icon>
+                  </ion-button>
+                </ion-buttons>
+              </ion-card-title>
+              <ion-card-content class="about-me-info">
+                <ion-row
+                  class="ion-align-self-center ion-justify-content-center"
+                >
+                  <!-- <ion-col size="12" sizeMd="6"> -->
+                  <ion-button color="secondary">
+                    <ion-icon slot="start" name="logo-react"></ion-icon>
+                    React
+                  </ion-button>
+
+                  <ion-button color="secondary">
+                    <ion-icon slot="start" name="laptop-outline"></ion-icon>
+                    Flutter
+                  </ion-button>
+
+                  <!-- </ion-col> -->
+                </ion-row>
+              </ion-card-content>
+            </ion-col>
+          </ion-row>
+          <ion-row
+            class="ion-align-self-center ion-justify-content-center ion-margin-top"
+          >
+            <ion-card-title>
+              <ion-buttons>
+                <ion-button>
+                  <ion-icon slot="start" size="default" name="code"></ion-icon>
+                  <ion-title>Projetos</ion-title>
+                  <ion-icon slot="end" size="default" name="code"></ion-icon>
+                </ion-button>
+              </ion-buttons>
+            </ion-card-title>
+          </ion-row>
+
+          <ion-row>
+            <ion-col size="12" sizeMd="3">
+              <ion-card color="light">
+                <img
+                  alt="Silhouette of mountains"
+                  src="https://ionicframework.com/docs/img/demos/card-media.png"
+                />
+                <ion-card-header>
+                  <ion-card-title>JEV-A</ion-card-title>
+                  <ion-card-subtitle>
+                    <ion-chip color="danger">
+                      Angular
+                      <ion-icon name="logo-angular"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="primary">
+                      Ionic
+                      <ion-icon name="logo-ionic"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="warning">
+                      Chart.js
+                      <ion-icon name="library"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="tertiary">
+                      PHP
+                      <ion-icon name="server"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip>
+                      MySQL
+                      <ion-icon name="server"></ion-icon>
+                    </ion-chip>
+                  </ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-content>
+                  Sistema de agendamento e gerenciamento de horário/clientes
+                  para um salão de beleza. Tem integração com o WhatsApp para
+                  enviar mensagens aos clientes.
+                </ion-card-content>
+                <ion-card-content>
+                  <ion-button
+                    color="success"
+                    href="https://www.linkedin.com/posts/luiz-fiuza-_angular-ionic-php-activity-7135078243274997762-1ugx?utm_source=share&utm_medium=member_desktop"
+                    target="_blank"
+                  >
+                    Ver Projeto
+                    <ion-icon
+                      size="default"
+                      slot="end"
+                      name="caret-forward"
+                    ></ion-icon>
+                  </ion-button>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+
+            <ion-col size="12" sizeMd="3">
+              <ion-card color="light">
+                <img
+                  alt="Silhouette of mountains"
+                  src="https://ionicframework.com/docs/img/demos/card-media.png"
+                />
+                <ion-card-header>
+                  <ion-card-title>Sign In/Sign Up page</ion-card-title>
+                  <ion-card-subtitle>
+                    <ion-chip class="ion-color-orange">
+                      HTML
+                      <ion-icon name="logo-html5"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="primary">
+                      CSS
+                      <ion-icon name="logo-css3"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="warning">
+                      JavaScript
+                      <ion-icon name="logo-javascript"></ion-icon>
+                    </ion-chip>
+                  </ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-content>
+                  Tela de Login com link para uma tela de cadastro, meramente
+                  ilustrativa com glassmorphism
+                </ion-card-content>
+                <ion-card-content>
+                  <ion-button
+                    color="success"
+                    href="https://luizfiuzaa.github.io/login-page/index.html"
+                    target="_blank"
+                  >
+                    Acessar Projeto
+                    <ion-icon
+                      size="default"
+                      slot="end"
+                      name="caret-forward"
+                    ></ion-icon>
+                  </ion-button>
+                  <ion-button
+                    color="dark"
+                    href="https://luizfiuzaa.github.io/login-page/index.html"
+                    target="_blank"
+                  >
+                    Ver Repositório
+                    <ion-icon
+                      size="default"
+                      slot="end"
+                      name="code-working"
+                    ></ion-icon>
+                  </ion-button>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+
+            <ion-col size="12" sizeMd="3">
+              <ion-card color="light">
+                <img
+                  alt="Silhouette of mountains"
+                  src="https://ionicframework.com/docs/img/demos/card-media.png"
+                />
+                <ion-card-header>
+                  <ion-card-title>Pokedex</ion-card-title>
+                  <ion-card-subtitle>
+                    <ion-chip class="ion-color-orange">
+                      HTML
+                      <ion-icon name="logo-html5"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="primary">
+                      CSS
+                      <ion-icon name="logo-css3"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="warning">
+                      JavaScript
+                      <ion-icon name="logo-javascript"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="tertiary">
+                      Bootstrap
+                      <ion-icon name="library"></ion-icon>
+                    </ion-chip>
+                  </ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-content>
+                  Pokedex integrada com a PokeAPI
+                </ion-card-content>
+                <ion-card-content>
+                  <ion-button
+                    color="success"
+                    href="https://luizfiuzaa.github.io/1Lista-PAM/"
+                    target="_blank"
+                  >
+                    Acessar Projeto
+                    <ion-icon
+                      size="default"
+                      slot="end"
+                      name="caret-forward"
+                    ></ion-icon>
+                  </ion-button>
+                  <ion-button
+                    color="dark"
+                    href="https://github.com/luizfiuzaa/1Lista-PAM"
+                    target="_blank"
+                  >
+                    Ver Repositório
+                    <ion-icon
+                      size="default"
+                      slot="end"
+                      name="code-working"
+                    ></ion-icon>
+                  </ion-button>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+
+            <ion-col size="12" sizeMd="3">
+              <ion-card color="light">
+                <img
+                  alt="Silhouette of mountains"
+                  src="https://ionicframework.com/docs/img/demos/card-media.png"
+                />
+                <ion-card-header>
+                  <ion-card-title>Tela de Login</ion-card-title>
+                  <ion-card-subtitle>
+                    <ion-chip class="ion-color-orange">
+                      HTML
+                      <ion-icon name="logo-html5"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="primary">
+                      CSS
+                      <ion-icon name="logo-css3"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="tertiary">
+                      Bootstrap
+                      <ion-icon name="library"></ion-icon>
+                    </ion-chip>
+
+                    <ion-chip color="tertiary">
+                      Figma
+                      <ion-icon name="logo-figma"></ion-icon>
+                    </ion-chip>
+                  </ion-card-subtitle>
+                </ion-card-header>
+
+                <ion-card-content>
+                  Sistema de agendamento e gerenciamento de horário/clientes
+                  para um salão de beleza. Tem integração com o WhatsApp para
+                  enviar mensagens aos clientes.
+                </ion-card-content>
+                <ion-card-content>
+                  <ion-button
+                    color="success"
+                    href="https://luizfiuzaa.github.io/projeto_figma/"
+                    target="_blank"
+                  >
+                    Acessar Projeto
+                    <ion-icon
+                      size="default"
+                      slot="end"
+                      name="caret-forward"
+                    ></ion-icon>
+                  </ion-button>
+                  <ion-button
+                    color="dark"
+                    href="https://github.com/luizfiuzaa/projeto_figma"
+                    target="_blank"
+                  >
+                    Ver Repositório
+                    <ion-icon
+                      size="default"
+                      slot="end"
+                      name="code-working"
+                    ></ion-icon>
+                  </ion-button>
+                </ion-card-content>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </ion-card>
       </ion-col>
-    </ion-row>
-  </ion-col>
-
-  <ion-col size="12">
-    <ion-row>
-      <ion-segment color="primary" value="about" [(ngModel)]="selectSegment">
-        <ion-segment-button value="about" layout="icon-end">
-          <ion-label>Sobre</ion-label>
-        </ion-segment-button>
-
-        <ion-segment-button value="projects" layout="icon-end">
-          <ion-label>(2) Projetos</ion-label>
-          <ion-icon name="document-text"></ion-icon>
-        </ion-segment-button>
-
-        <ion-segment-button value="techs" layout="icon-end">
-          <ion-label>(9) Tecnologias</ion-label>
-          <ion-icon name="flash"></ion-icon>
-        </ion-segment-button>
-      </ion-segment>
-    </ion-row>
-  </ion-col>
-
-  <ion-col size="12">
-    <ion-row>
-      <div *ngIf="selectSegment == 'about'">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Sobre Mim</ion-card-title>
-            <ion-card-subtitle
-              >Téc. Desenvolvimento de Sistemas</ion-card-subtitle
-            >
-          </ion-card-header>
-
-          <div class="about_me">
-            <ion-card-content>
-              <p>
-                👋 Olá! Me chamo Luiz Fiuza, sou Técnico em Desenvolvimento de
-                Sistemas e atualmente estou cursando Análise e Desenvolvimento
-                de Sistemas.
-              </p>
-            </ion-card-content>
-
-            <ion-card-content>
-              <p>
-                Me interesso bastante pelo Front-End, tenho conhecimento sobre
-                Angular e Ionic e atualmente estou estudando React e Flutter.
-              </p>
-            </ion-card-content>
-            <ion-card-content>
-              <p>
-                Sinta-se livre para ver meus projetos e entrar em contato comigo
-                :)
-              </p>
-            </ion-card-content>
-          </div>
-        </ion-card>
-      </div>
-
-      <div *ngIf="selectSegment == 'projects'" class="ion-justify-content-center">
-        <ion-card>
-          <img
-            alt="Silhouette of mountains"
-            src="https://ionicframework.com/docs/img/demos/card-media.png"
-          />
-          <ion-card-header>
-            <ion-card-title>Card Title</ion-card-title>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          </ion-card-header>
-
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more,
-            nothing less.
-          </ion-card-content>
-        </ion-card>
-      </div>
-
-      <div *ngIf="selectSegment == 'techs'" class="">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Tecnologias</ion-card-title>
-            <ion-card-subtitle
-              >Linguagens/Frameworks/Ferramentas</ion-card-subtitle
-            >
-          </ion-card-header>
-          <ion-card-content>
-            <ion-list>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>Angular</ion-label>
-              </ion-item>
-
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>Ionic</ion-label>
-              </ion-item>
-
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>Bootstrap</ion-label>
-              </ion-item>
-
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>Figma</ion-label>
-              </ion-item>
-
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>Photoshop</ion-label>
-              </ion-item>
-
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>Git/Github</ion-label>
-              </ion-item>
-
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>JavaScript</ion-label>
-              </ion-item>
-
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>CSS</ion-label>
-              </ion-item>
-
-              <ion-item lines="none">
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>HTML</ion-label>
-              </ion-item>
-            </ion-list>
-          </ion-card-content>
-        </ion-card>
-
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Atualmente estudando...</ion-card-title>
-            <ion-card-subtitle>Frameworks/Biblioteca</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            <ion-list>
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>Flutter</ion-label>
-              </ion-item>
-
-              <ion-item>
-                <ion-thumbnail slot="start">
-                  <img
-                    alt="Silhouette of mountains"
-                    src="https://ionicframework.com/docs/img/demos/thumbnail.svg"
-                  />
-                </ion-thumbnail>
-                <ion-label>React</ion-label>
-              </ion-item>
-            </ion-list>
-          </ion-card-content>
-        </ion-card>
-      </div>
     </ion-row>
   </ion-col>
 </ion-content>
