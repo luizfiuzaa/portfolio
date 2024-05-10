@@ -5,31 +5,19 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage implements OnInit {
+export class HomePage {
 
-  themeToggle:any = false;
-
-  selectSegment:any = 'about';
-
-  ngOnInit() {
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-    this.initializeDarkTheme(prefersDark.matches);
-    prefersDark.addEventListener('change', (mediaQuery) => this.initializeDarkTheme(mediaQuery.matches));
-  }
-
-  initializeDarkTheme(isDark:any) {
-    this.themeToggle = isDark;
-    this.toggleDarkTheme(isDark);
-  }
-
-  toggleChange(event:any) {
-    this.toggleDarkTheme(event.detail.checked);
-  }
-
-  toggleDarkTheme(shouldAdd:any) {
-    document.body.classList.toggle('dark', shouldAdd);
-  }
-
+  
+  projetos: any = {
+    nome: "JEV-A",
+    desc: "Sistema de agendamento e gerenciamento de horário/clientes para um salão de beleza. Tem integração com o WhatsApp para enviar mensagens aos clientes.",
+    techs: {
+      angular: true,
+      ionic: true,
+      chartjs: true,
+      
+    },
+  };
 
 
 }
