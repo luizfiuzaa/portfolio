@@ -9,9 +9,21 @@ import { AboutMeComponent } from '../components/about-me/about-me.component';
 import { InfoListComponent } from '../components/info-list/info-list.component';
 import { ProjectsComponent } from '../components/projects/projects.component';
 import { HeaderComponent } from '../components/menu/header/header.component';
+import { FooterComponent } from '../components/menu/footer/footer.component';
+import { TechsComponent } from '../components/techs/techs.component';
+import { LearningTechsComponent } from '../components/learning-techs/learning-techs.component';
 
 @NgModule({
   imports: [CommonModule, FormsModule, IonicModule, HomePageRoutingModule],
-  declarations: [HomePage, AboutMeComponent, InfoListComponent, ProjectsComponent, HeaderComponent],
+  declarations: [
+    HomePage,
+    AboutMeComponent,
+    InfoListComponent,
+    ProjectsComponent,
+    HeaderComponent,
+    FooterComponent,
+    TechsComponent,
+    LearningTechsComponent,
+  ],
 })
 export class HomePageModule {}
