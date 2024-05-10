@@ -2,17 +2,13 @@
   <ion-buttons
     class="ion-align-self-center ion-justify-content-center ion-margin-top"
   >
-    <ion-button
-      ><ion-icon slot="start" size="default" name="person"></ion-icon>
-
-      <ion-title>Sobre</ion-title>
-
-      <ion-icon slot="end" size="default" name="person"></ion-icon>
+    <ion-button>
+      <ion-title>Sobre Mim</ion-title>
     </ion-button>
   </ion-buttons>
 </ion-card-title>
 <ion-row class="ion-align-self-center ion-justify-content-center">
-  <ion-col size="12" sizeMd="6">
+  <ion-col size="12" sizeMd="7">
     <ion-card-content class="about-me-info">
       👋 Olá! Me chamo Luiz Fiuza e sou Desenvolvedor Front-End e também Técnico
       em Desenvolvimento de Sistemas. Sempre fui interessado pela tecnologia ao
@@ -27,50 +23,15 @@
   <ion-buttons
     class="ion-align-self-center ion-justify-content-center ion-margin-top about-me-title"
   >
-    <ion-button
-      ><ion-icon slot="start" size="default" name="build"></ion-icon>
-      <ion-title>Tecnologias</ion-title>
-      <ion-icon slot="end" size="default" name="build"></ion-icon>
+    <ion-button>
+      <ion-title>Tecnologias & Ferramentas</ion-title>
     </ion-button>
   </ion-buttons>
 </ion-card-title>
 <ion-card-content class="about-me-info">
   <ion-row class="ion-justify-content-center">
     <ion-col size="12" sizeMd="6">
-      <ion-button color="danger">
-        <ion-icon slot="start" name="logo-angular"></ion-icon>
-        Angular
-      </ion-button>
-
-      <ion-button color="primary">
-        <ion-icon slot="start" name="logo-ionic"></ion-icon>
-        Ionic
-      </ion-button>
-
-      <ion-button color="dark">
-        <ion-icon slot="start" name="logo-github"></ion-icon>
-        Git/Github
-      </ion-button>
-
-      <ion-button color="tertiary">
-        <ion-icon slot="start" name="logo-figma"></ion-icon>
-        Figma
-      </ion-button>
-
-      <ion-button color="primary">
-        <ion-icon slot="start" name="logo-css3"></ion-icon>
-        CSS
-      </ion-button>
-
-      <ion-button class="ion-color-orange">
-        <ion-icon slot="start" name="logo-html5"></ion-icon>
-        HTML
-      </ion-button>
-
-      <ion-button color="warning">
-        <ion-icon slot="start" name="logo-javascript"></ion-icon>
-        JavaScript
-      </ion-button>
+      <app-techs></app-techs>
     </ion-col>
   </ion-row>
 </ion-card-content>
@@ -79,18 +40,17 @@
   <ion-buttons
     class="ion-align-self-center ion-justify-content-center ion-margin-top about-me-title"
   >
-    <ion-button
-      ><ion-icon slot="start" size="default" name="book"></ion-icon>
-      <ion-title>Estudando</ion-title>
-      <ion-icon slot="end" size="default" name="book"></ion-icon>
+    <ion-button>
+      <ion-title>Atualmente Estudando</ion-title>
     </ion-button>
   </ion-buttons>
 </ion-card-title>
 <ion-card-content class="about-me-info">
-  <ion-row class="ion-align-self-center ion-justify-content-center">
-    <ion-button color="secondary">
-      <ion-icon slot="start" name="laptop-outline"></ion-icon>
-      Flutter
-    </ion-button>
-  </ion-row>
+  <ion-col size="12" sizeMd="6">
+    <ion-row class="ion-align-self-center ion-justify-content-center">
+      <ion-row>
+        <app-learning-techs></app-learning-techs>
+      </ion-row>
+    </ion-row>
+  </ion-col>
 </ion-card-content>
