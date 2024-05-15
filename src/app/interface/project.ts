@@ -1,13 +1,14 @@
+export interface Tech {
+  name: string;
+  logo: string;
+  color: string;
+}
+
 export interface Project {
   image: string;
   title: string;
   desc: string;
-  deploy?: string;
-  code?: string;
-}
-
-export interface ProjectTechs {
-  techs_name: String[];
-  techs_logos: String[];
-  techs_color: String[];
+  deploy: string;
+  code: string;
+  techs: Tech[];
 }

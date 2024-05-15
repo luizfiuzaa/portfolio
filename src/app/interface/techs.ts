@@ -1,11 +1,11 @@
 export interface Techs {
-  techs_name: String[];
-  techs_logos: String[];
-  techs_color: String[];
+  techs_name: string[];
+  techs_logos: string[];
+  techs_color: string[];
 }
 
 export interface LearningTechs {
-  techs: String[];
-  techs_logos: String[];
-  techs_chip_color: String[];
+  techs: string[];
+  techs_logos: string[];
+  techs_chip_color: string[];
 }
