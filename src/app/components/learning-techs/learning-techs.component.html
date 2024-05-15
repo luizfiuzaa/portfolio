@@ -1,14 +1,6 @@
-<ion-chip color="primary">
-  <ion-icon name="laptop-outline"></ion-icon>
-  <ion-label>Flutter</ion-label>
-</ion-chip>
-
-<ion-chip color="danger">
-  <ion-icon name="logo-laravel"></ion-icon>
-  <ion-label>Laravel</ion-label>
-</ion-chip>
-
-<ion-chip color="primary">
-  <ion-icon name="logo-laravel"></ion-icon>
-  <ion-label>C</ion-label>
-</ion-chip>
+<ng-container *ngFor="let learningTech of learningTechs; let id = index">
+  <ion-chip color="{{learningTech.color}}">
+    <ion-icon name="{{learningTech.logo}}"></ion-icon>
+    <ion-label>{{learningTech.name}}</ion-label>
+  </ion-chip>
+</ng-container>

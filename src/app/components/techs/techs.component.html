@@ -1,59 +1,6 @@
-<ion-chip color="dark">
-  <ion-icon name="logo-github"></ion-icon>
-  <ion-label>Git/Github</ion-label>
-</ion-chip>
-
-<ion-chip color="tertiary">
-  <ion-icon name="logo-figma"></ion-icon>
-  <ion-label>Figma</ion-label>
-</ion-chip>
-
-<ion-chip color="primary">
-  <ion-icon name="calendar"></ion-icon>
-  <ion-label>Jira Software</ion-label>
-</ion-chip>
-
-<ion-chip color="danger">
-  <ion-icon name="logo-angular"></ion-icon>
-  <ion-label>Angular</ion-label>
-</ion-chip>
-
-<ion-chip color="primary">
-  <ion-icon name="logo-ionic"></ion-icon>
-  <ion-label>Ionic</ion-label>
-</ion-chip>
-
-<ion-chip color="warning">
-  <ion-icon class="html" name="logo-html5"></ion-icon>
-  <ion-label>HTML</ion-label>
-</ion-chip>
-
-<ion-chip color="primary">
-  <ion-icon name="logo-css3"></ion-icon>
-  <ion-label>CSS</ion-label>
-</ion-chip>
-
-<ion-chip color="tertiary">
-  <ion-icon name="library"></ion-icon>
-  <ion-label>Bootstrap</ion-label>
-</ion-chip>
-
-<ion-chip color="danger">
-  <ion-icon name="logo-sass"></ion-icon>
-  <ion-label>SCSS</ion-label>
-</ion-chip>
-
-<ion-chip color="warning">
-  <ion-icon name="logo-javascript"></ion-icon>
-  <ion-label>JavaScript</ion-label>
-</ion-chip>
-
-<ion-chip color="tertiary">
-  <ion-icon color="tertiary" name="server"></ion-icon>
-  <ion-label>PHP</ion-label>
-</ion-chip>
-
-<ion-chip>
-  <ion-icon name="server" color="dark"></ion-icon>
-  <ion-label>MySQL</ion-label>
-</ion-chip>
+<ng-container *ngFor="let tech of techs; let id = index">
+  <ion-chip mode="ios" color="{{tech.color}}">
+    <ion-icon name="{{tech.logo}}"></ion-icon>
+    <ion-label>{{tech.name}}</ion-label>
+  </ion-chip>
+</ng-container>
