@@ -1,5 +1,6 @@
 export interface Links {
+    text: string;
     logo: string;
     color: string;
-    link: string;
+    uri: string;
 }

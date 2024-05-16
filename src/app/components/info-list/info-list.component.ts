@@ -8,21 +8,24 @@ import { Links } from 'src/app/interface/links';
 })
 export class InfoListComponent  implements OnInit {
 
-  link: Links[] = [
+  links: Links[] = [
     {
+      text: '/luizfiuzaa',
       logo: 'logo-github',
       color: 'dark',
-      link: 'https://www.github.com/luizfiuzaa/'
+      uri: 'https://www.github.com/luizfiuzaa/'
     },
     {
+      text: 'in/luiz-fiuza-',
       logo: 'logo-linkedin',
       color: 'primary',
-      link: 'https://www.linkedin.com/in/luiz-fiuza-/'
+      uri: 'https://www.linkedin.com/in/luiz-fiuza-/'
     },
     {
+      text: 'luizfiuza.b@gmai.com',
       logo: 'mail',
       color: 'secondary',
-      link: 'mailto:luizfiuza.b@gmail.com'
+      uri: 'mailto:luizfiuza.b@gmail.com'
     },
   ];
 

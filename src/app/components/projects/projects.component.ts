@@ -50,7 +50,7 @@ export class ProjectsComponent implements OnInit {
   },{
     image: '../../../assets/images/images_projects/project_Linkstation.png',
     title: 'LinkStation',
-    desc: 'Aplicação indexador de links.',
+    desc: 'Aplicação indexador dos meus links de acesso, utilizando Figma para o Design da interface, Angular e Ionic para a contrução da página',
     deploy: '',
     code: '',
     techs: [
@@ -83,7 +83,7 @@ export class ProjectsComponent implements OnInit {
   },{
     image: '../../../assets/images/images_projects/project_LoginPage.png',
     title: 'Login Page',
-    desc: 'Página de login',
+    desc: 'Página de login feita com Bootstrap, utilizando Figma para auxiliar no design da interdface',
     deploy: '',
     code: '',
     techs: [

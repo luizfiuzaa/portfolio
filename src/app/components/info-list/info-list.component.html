@@ -1,9 +1,6 @@
 <div class="profile_images">
-  <img
-  class="profile_pic"
-  src="https://avatars.githubusercontent.com/u/96220499?v=4"
-  alt="Foto de Luiz Fiuza sorrindo para a foto, sentado em uma cadeira verde, usando um óculos de armação preta juntamente com o uniforme preto da Etec Sales Gomes e em seu pescoço um crachá de identificação da Campus Party 15 Brasil"
-/>
+  <img class="profile_pic" src="https://avatars.githubusercontent.com/u/96220499?v=4"
+    alt="Foto de Luiz Fiuza sorrindo para a foto, sentado em uma cadeira verde, usando um óculos de armação preta juntamente com o uniforme preto da Etec Sales Gomes e em seu pescoço um crachá de identificação da Campus Party 15 Brasil" />
 </div>
 
 <ion-card-header>
@@ -17,21 +14,12 @@
   <ion-list-header>
     <ion-label>Links/Contato/Currículo</ion-label>
   </ion-list-header>
-
-  <ion-item href="https://www.linkedin.com/in/luiz-fiuza-/" target="_blank">
-    <ion-icon color="dark" name="logo-github"></ion-icon>
-    /luizfiuzaa
-  </ion-item>
-
-  <ion-item href="https://github.com/luizfiuzaa" target="_blank">
-    <ion-icon color="primary" name="logo-linkedin"></ion-icon>
-    /luiz-fiuza-
-  </ion-item>
-
-  <ion-item href="mailto:luizfiuza.b@gmail.com" target="_blank">
-    <ion-icon color="secondary" name="mail"></ion-icon>
-    luizfiuza.b&#64;gmail.com
-  </ion-item>
+  <ng-container *ngFor="let link of links; let idLinks = index;">
+    <ion-item mode="ios" href="{{link.uri}}" target="_blank" rel="noopener noreferrer">
+      <ion-icon name="{{link.logo}}" color="{{link.color}}"></ion-icon>
+      {{link.text}}
+    </ion-item>
+  </ng-container>
 </ion-list>
 <ion-col size="12">
   <ion-button mode="ios" expand="full" size="default" color="success">
