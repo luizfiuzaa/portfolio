@@ -1,11 +1,9 @@
 <ion-col size="12">
-  <ion-row
-    class="ion-align-self-center ion-justify-content-center ion-margin-top"
-  >
+  <ion-row class="ion-align-self-center ion-justify-content-center ion-margin-top">
     <ion-card-title>
       <ion-buttons>
         <ion-button>
-          <ion-title>Projetos</ion-title>
+          <ion-title mode="ios" color="dark">Projetos</ion-title>
         </ion-button>
       </ion-buttons>
     </ion-card-title>
@@ -18,10 +16,7 @@
       <ion-col mode="ios" size="12" sizeMd="3">
         <ion-row>
           <ion-card>
-            <img
-              alt="Silhouette of mountains"
-              src="{{project.image}}"
-            />
+            <img alt="Silhouette of mountains" src="{{project.image}}" />
             <ion-card-header>
               <ion-card-title>{{ project.title }}</ion-card-title>
               <ion-card-subtitle>
@@ -33,12 +28,22 @@
                 </ng-container>
               </ion-card-subtitle>
             </ion-card-header>
-  
+
             <ion-card-content> {{ project.desc }} </ion-card-content>
             <ion-card-content>
               <ion-col size="12" sizeMd="6">
-                <ion-button expand="full" color="success">Ver Projeto</ion-button>
-                <ion-button expand="full" color="dark">Ver Repositório</ion-button>
+                <ng-container *ngIf="project.deploy != '' ">
+                  <ion-button color="success" href="{{project.deploy}}" target="_blank" rel="noopener noreferrer"
+                    expand="full">
+                    Ver Projeto
+                  </ion-button>
+                </ng-container>
+                <ng-container *ngIf="project.deploy != '' ">
+                  <ion-button color="dark" href="{{project.code}}" target="_blank" rel="noopener noreferrer"
+                    expand="full">
+                    Ver Código
+                  </ion-button>
+                </ng-container>
               </ion-col>
             </ion-card-content>
           </ion-card>

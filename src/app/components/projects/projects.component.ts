@@ -83,9 +83,9 @@ export class ProjectsComponent implements OnInit {
   },{
     image: '../../../assets/images/images_projects/project_LoginPage.png',
     title: 'Login Page',
-    desc: 'Página de login feita com Bootstrap, utilizando Figma para auxiliar no design da interdface',
-    deploy: '',
-    code: '',
+    desc: 'Página de login feita com HTML, CSS e Bootstrap. Utilizando Figma para auxiliar no design da interface',
+    deploy: 'https://luizfiuzaa.github.io/projeto_figma/',
+    code: 'https://github.com/luizfiuzaa/projeto_figma',
     techs: [
       {
         name: 'Angular',

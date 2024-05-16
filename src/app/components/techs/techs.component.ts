@@ -27,7 +27,7 @@ export class TechsComponent implements OnInit {
     color: 'danger',
   }, {
     name: 'Bootstrap',
-    logo: 'library',
+    logo: 'layers',
     color: 'tertiary',
   }, {
     name: 'PHP',
@@ -40,7 +40,6 @@ export class TechsComponent implements OnInit {
   },{
     name: 'Git/GitHub',
     logo: 'logo-github',
-    
     color: 'dark',
   },
   {
