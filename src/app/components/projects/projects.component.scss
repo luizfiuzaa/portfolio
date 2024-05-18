@@ -1,9 +1,4 @@
 ion-card{
-    height: 600px;
+    height: auto;
+    max-height: calc(auto + 200px);
 }
-
-// @media (min-width: ) {
-//     ion-card{
-//         height: 600px;
-//     }
-// }

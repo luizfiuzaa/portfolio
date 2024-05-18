@@ -14,7 +14,6 @@ export class ProjectsComponent implements OnInit {
     title: 'Josy Espaço VIP - Agendamentos',
     desc: 'Sistema de agendamento e gerenciamento de serviços e clientes, para o salão de beleza Josy ESpaço VIP.',
     deploy: '',
-    code: '',
     techs: [
       {
         name: 'Angular',
