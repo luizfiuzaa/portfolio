@@ -1,0 +1,7 @@
+ion-chip{
+  transition: all ease-in-out .3s;
+  cursor: default;
+}
+ion-chip:hover{
+  transform: translateY(-8px);
+}
