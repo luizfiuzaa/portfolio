@@ -14,24 +14,9 @@ export class TechsComponent implements OnInit {
       color: 'danger',
     },
     {
-      name: 'Ionic Framewrok',
+      name: 'Ionic',
       logo: 'logo-ionic',
       color: 'primary',
-    },
-    {
-      name: 'Sass',
-      logo: 'logo-sass',
-      color: 'danger',
-    },
-    {
-      name: 'PHP',
-      logo: 'server',
-      color: 'tertiary',
-    },
-    {
-      name: 'MySQL',
-      logo: 'server',
-      color: 'secondary',
     },
     {
       name: 'JavaScript',
@@ -47,6 +32,26 @@ export class TechsComponent implements OnInit {
       name: 'Figma',
       logo: 'logo-figma',
       color: 'tertiary',
+    },
+    {
+      name: 'Arduino',
+      logo: 'hardware-chip',
+      color: 'secondary',
+    },
+    {
+      name: 'Sass',
+      logo: 'logo-sass',
+      color: 'danger',
+    },
+    {
+      name: 'PHP',
+      logo: 'server',
+      color: 'tertiary',
+    },
+    {
+      name: 'MySQL',
+      logo: 'server',
+      color: 'secondary',
     },
     {
       name: 'Git/GitHub',
