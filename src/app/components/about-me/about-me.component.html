@@ -2,20 +2,33 @@
   <ion-buttons
     class="ion-align-self-center ion-justify-content-center ion-margin-top"
   >
-    <ion-button>
-      <ion-title mode="md" color="dark">Sobre Mim</ion-title>
-    </ion-button>
+    <ion-title class="ion-text-center">Sobre Mim</ion-title>
   </ion-buttons>
 </ion-card-title>
 <ion-row class="ion-align-self-center ion-justify-content-center">
   <ion-col size-sm="12" size-md="12" size-lg="8">
-    <ion-card-content class="about-me-info">
-      👋 Olá! Me chamo Luiz Fiuza e sou Desenvolvedor Front-End e também Técnico
-      em Desenvolvimento de Sistemas. Sempre fui interessado pela tecnologia ao
-      todo, me identifico com a área Front-End Developer. Cursei meu técnico na
-      Etec e atualmente estou estudando Análise e Desenvolvimento de Sistemas na
+    <p class="about-me-info">👋 Olá! Me chamo Luiz Fiuza.</p>
+
+    <article>
+      <p class="about-me-info">
+        👤 Sempre me interessei pela área da Tecnologia e Informação, gosto de
+        compreender novos assuntos ou funcionamentos dentro e fora da área da
+        tecnologia.
+        <br />
+        Sou formado como Técnico em Desenvolvimento de Sistemas e busco uma
+        oportunidade na área de Desenvolvimento Web/Mobile.
+      </p>
+    </article>
+
+    <p class="about-me-info">
+      🎓 Concluí em 2023 meu ensino Médio Integrado ao Técnico na Etec Sales
+      Gomes, Tatuí.
+    </p>
+
+    <p class="about-me-info">
+      📚 Atualmente estou estudando Análise e Desenvolvimento de Sistemas na
       Fatec.
-    </ion-card-content>
+    </p>
   </ion-col>
 </ion-row>
 
@@ -23,15 +36,15 @@
   <ion-buttons
     class="ion-align-self-center ion-justify-content-center ion-margin-top about-me-title"
   >
-    <ion-button>
-      <ion-title mode="md" color="dark">Tecnologias & Ferramentas</ion-title>
-    </ion-button>
+    <ion-title class="ion-text-center">Tecnologias & Ferramentas</ion-title>
   </ion-buttons>
 </ion-card-title>
 <ion-card-content class="about-me-info">
   <ion-row class="ion-justify-content-center">
     <ion-col size-sm="12" size-md="12" size-lg="8">
-      <app-techs></app-techs>
+      <ion-row>
+        <app-techs></app-techs>
+      </ion-row>
     </ion-col>
   </ion-row>
 </ion-card-content>
@@ -40,16 +53,14 @@
   <ion-buttons
     class="ion-align-self-center ion-justify-content-center ion-margin-top about-me-title"
   >
-    <ion-button>
-      <ion-title mode="md" color="dark">Atualmente Estudando</ion-title>
-    </ion-button>
+    <ion-title class="ion-text-center">Atualmente Estudando</ion-title>
   </ion-buttons>
 </ion-card-title>
 <ion-card-content class="about-me-info">
   <ion-col size-sm="12" size-md="12" size-lg="8">
     <ion-row class="ion-align-self-center ion-justify-content-center">
       <ion-row>
-        <app-learning-techs mode="ios"></app-learning-techs>
+        <app-learning-techs></app-learning-techs>
       </ion-row>
     </ion-row>
   </ion-col>
