@@ -10,19 +10,19 @@ export class InfoListComponent  implements OnInit {
 
   links: Links[] = [
     {
-      text: '/luizfiuzaa',
+      text: 'GitHub',
       logo: 'logo-github',
       color: 'dark',
       uri: 'https://www.github.com/luizfiuzaa/'
     },
     {
-      text: 'in/luiz-fiuza-',
+      text: 'LinkedIn',
       logo: 'logo-linkedin',
       color: 'primary',
       uri: 'https://www.linkedin.com/in/luiz-fiuza-/'
     },
     {
-      text: 'luizfiuza.b@gmai.com',
+      text: 'Email',
       logo: 'mail',
       color: 'secondary',
       uri: 'mailto:luizfiuza.b@gmail.com'
