@@ -8,116 +8,116 @@ import { Project } from 'src/app/interface/project';
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent implements OnInit {
-
-  projects: Project[] = [{
-    image: '../../../assets/images/images_projects/project_JEV-A.png',
-    title: 'Josy Espaço VIP - Agendamentos',
-    desc: 'Sistema de agendamento e gerenciamento de serviços e clientes, para o salão de beleza Josy ESpaço VIP.',
-    deploy: '',
-    techs: [
-      {
-        name: 'Angular',
-        logo: 'logo-angular',
-        color: 'danger',
-      },
-      {
-        name: 'Ionic Framework',
-        logo: 'logo-ionic',
-        color: 'primary',
-      },
-      {
-        name: 'Git/GitHub',
-        logo: 'logo-github',
-        color: 'dark',
-      },
-      {
-        name: 'Figma',
-        logo: 'logo-figma',
-        color: 'tertiary',
-      },
-      {
-        name: 'Chart.js',
-        logo: 'library',
-        color: 'warning',
-      },
-      {
-        name: 'Sass',
-        logo: 'logo-sass',
-        color: 'danger',
-      },
-    ],
-  },{
-    image: '../../../assets/images/images_projects/project_Linkstation.png',
-    title: 'LinkStation',
-    desc: 'Aplicação indexador dos meus links de acesso, utilizando Figma para o Design da interface, Angular e Ionic para a contrução da página',
-    deploy: '',
-    code: '',
-    techs: [
-      {
-        name: 'Angular',
-        logo: 'logo-angular',
-        color: 'danger',
-      },
-      {
-        name: 'Ionic Framework',
-        logo: 'logo-ionic',
-        color: 'primary',
-      },
-      {
-        name: 'Git/GitHub',
-        logo: 'logo-github',
-        color: 'dark',
-      },
-      {
-        name: 'Figma',
-        logo: 'logo-figma',
-        color: 'tertiary',
-      },
-      {
-        name: 'Sass',
-        logo: 'logo-sass',
-        color: 'danger',
-      },
-    ],
-  },{
-    image: '../../../assets/images/images_projects/project_LoginPage.png',
-    title: 'Login Page',
-    desc: 'Página de login feita com HTML, CSS e Bootstrap. Utilizando Figma para auxiliar no design da interface',
-    deploy: 'https://luizfiuzaa.github.io/projeto_figma/',
-    code: 'https://github.com/luizfiuzaa/projeto_figma',
-    techs: [
-      {
-        name: 'Angular',
-        logo: 'logo-angular',
-        color: 'danger',
-      },
-      {
-        name: 'Ionic Framework',
-        logo: 'logo-ionic',
-        color: 'primary',
-      },
-      {
-        name: 'Git/GitHub',
-        logo: 'logo-github',
-        color: 'dark',
-      },
-      {
-        name: 'Figma',
-        logo: 'logo-figma',
-        color: 'tertiary',
-      },
-      {
-        name: 'Sass',
-        logo: 'logo-sass',
-        color: 'danger',
-      },
-    ],
-  },
+  projects: Project[] = [
+    {
+      image: '../../../assets/images/images_projects/project_JEV-A.png',
+      title: 'Josy Espaço VIP - Agendamentos',
+      desc: 'Sistema de agendamento e gerenciamento de serviços e clientes, para o salão de beleza Josy Espaço VIP.',
+      post: 'https://www.linkedin.com/posts/luiz-fiuza-_angular-ionic-php-activity-7135078243274997762-1ugx?utm_source=share&utm_medium=member_desktop',
+      techs: [
+        {
+          name: 'Angular',
+          logo: 'logo-angular',
+          color: 'danger',
+        },
+        {
+          name: 'Ionic Framework',
+          logo: 'logo-ionic',
+          color: 'primary',
+        },
+        {
+          name: 'Git/GitHub',
+          logo: 'logo-github',
+          color: 'dark',
+        },
+        {
+          name: 'Figma',
+          logo: 'logo-figma',
+          color: 'tertiary',
+        },
+        {
+          name: 'Chart.js',
+          logo: 'library',
+          color: 'warning',
+        },
+        {
+          name: 'Sass',
+          logo: 'logo-sass',
+          color: 'danger',
+        },
+      ],
+    },
+    {
+      image: '../../../assets/images/images_projects/project_Linkstation.png',
+      title: 'LinkStation',
+      desc: 'Aplicação indexador dos meus links de acesso, utilizando Figma para o Design da interface, Angular e Ionic para a contrução da página',
+      deploy: '',
+      code: '',
+      techs: [
+        {
+          name: 'Angular',
+          logo: 'logo-angular',
+          color: 'danger',
+        },
+        {
+          name: 'Ionic Framework',
+          logo: 'logo-ionic',
+          color: 'primary',
+        },
+        {
+          name: 'Git/GitHub',
+          logo: 'logo-github',
+          color: 'dark',
+        },
+        {
+          name: 'Figma',
+          logo: 'logo-figma',
+          color: 'tertiary',
+        },
+        {
+          name: 'Sass',
+          logo: 'logo-sass',
+          color: 'danger',
+        },
+      ],
+    },
+    {
+      image: '../../../assets/images/images_projects/project_LoginPage.png',
+      title: 'Login Page',
+      desc: 'Página de login feita com HTML, CSS e Bootstrap. Utilizando Figma para auxiliar no design da interface',
+      deploy: 'https://luizfiuzaa.github.io/projeto_figma/',
+      code: 'https://github.com/luizfiuzaa/projeto_figma',
+      techs: [
+        {
+          name: 'Angular',
+          logo: 'logo-angular',
+          color: 'danger',
+        },
+        {
+          name: 'Ionic Framework',
+          logo: 'logo-ionic',
+          color: 'primary',
+        },
+        {
+          name: 'Git/GitHub',
+          logo: 'logo-github',
+          color: 'dark',
+        },
+        {
+          name: 'Figma',
+          logo: 'logo-figma',
+          color: 'tertiary',
+        },
+        {
+          name: 'Sass',
+          logo: 'logo-sass',
+          color: 'danger',
+        },
+      ],
+    },
   ];
 
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() { }
-
+  ngOnInit() {}
 }

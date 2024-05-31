@@ -1,3 +1,10 @@
-ion-card{
-    min-width: 268px;
+ion-card {
+  min-width: 268px;
+  height: 100%;
+  transform: translateY(auto);
+  transition: all ease-in-out .3s;
+}
+
+ion-card:hover {
+  transform: translateY(-13px);
 }

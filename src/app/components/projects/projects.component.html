@@ -13,7 +13,7 @@
     <ng-container *ngFor="let project of this.projects; let id = index">
       <ion-col mode="ios" size-sm="12" size-md="6" size-lg="4">
         <ion-row>
-          <ion-card>
+          <ion-card class="ion-h">
             <img alt="Silhouette of mountains" src="{{ project.image }}" />
             <ion-card-header>
               <ion-card-title>{{ project.title }}</ion-card-title>
@@ -39,6 +39,17 @@
                     expand="full"
                   >
                     Ver Projeto
+                  </ion-button>
+                </ng-container>
+                <ng-container *ngIf="project.post">
+                  <ion-button
+                    color="primary"
+                    href="{{ project.post }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    expand="full"
+                  >
+                    Ver Prostagem
                   </ion-button>
                 </ng-container>
                 <ng-container *ngIf="project.code">
