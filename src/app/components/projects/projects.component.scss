@@ -1,10 +1,14 @@
+
 ion-card {
   min-width: 268px;
-  height: 100%;
   transform: translateY(auto);
-  transition: all ease-in-out .3s;
-}
+  transition: all ease-in-out 0.3s;
+  ion-card-content{
+    min-height: 225px;
+  }
+  .link_buttons{margin-top: 5%;}
 
+}
 ion-card:hover {
   transform: translateY(-13px);
 }

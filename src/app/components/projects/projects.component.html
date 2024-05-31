@@ -27,42 +27,45 @@
               </ion-card-subtitle>
             </ion-card-header>
 
-            <ion-card-content> {{ project.desc }} </ion-card-content>
             <ion-card-content>
+              {{ project.desc }}
+
               <ion-col size="12" sizeMd="6">
-                <ng-container *ngIf="project.deploy">
-                  <ion-button
-                    color="success"
-                    href="{{ project.deploy }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    expand="full"
-                  >
-                    Ver Projeto
-                  </ion-button>
-                </ng-container>
-                <ng-container *ngIf="project.post">
-                  <ion-button
-                    color="primary"
-                    href="{{ project.post }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    expand="full"
-                  >
-                    Ver Prostagem
-                  </ion-button>
-                </ng-container>
-                <ng-container *ngIf="project.code">
-                  <ion-button
-                    color="dark"
-                    href="{{ project.code }}"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    expand="full"
-                  >
-                    Ver Código
-                  </ion-button>
-                </ng-container>
+                <div class="link_buttons">
+                  <ng-container *ngIf="project.deploy">
+                    <ion-button
+                      color="success"
+                      href="{{ project.deploy }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      expand="full"
+                    >
+                      Ver Projeto
+                    </ion-button>
+                  </ng-container>
+                  <ng-container *ngIf="project.post">
+                    <ion-button
+                      color="primary"
+                      href="{{ project.post }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      expand="full"
+                    >
+                      Ver Prostagem
+                    </ion-button>
+                  </ng-container>
+                  <ng-container *ngIf="project.code">
+                    <ion-button
+                      color="dark"
+                      href="{{ project.code }}"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      expand="full"
+                    >
+                      Ver Código
+                    </ion-button>
+                  </ng-container>
+                </div>
               </ion-col>
             </ion-card-content>
           </ion-card>
