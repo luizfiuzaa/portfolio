@@ -9,7 +9,6 @@ export interface Project {
   title: string;
   desc: string;
   deploy?: string;
-  post?: string;
   code?: string;
   techs: Tech[];
 }

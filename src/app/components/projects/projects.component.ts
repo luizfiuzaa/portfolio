@@ -13,7 +13,8 @@ export class ProjectsComponent implements OnInit {
       image: '../../../assets/images/images_projects/project_JEV-A.png',
       title: 'Josy Espaço VIP - Agendamentos',
       desc: 'Sistema de agendamento e gerenciamento de serviços e clientes, para o salão de beleza Josy Espaço VIP.',
-      post: 'https://www.linkedin.com/posts/luiz-fiuza-_angular-ionic-php-activity-7135078243274997762-1ugx?utm_source=share&utm_medium=member_desktop',
+      deploy:
+        'https://www.linkedin.com/posts/luiz-fiuza-_angular-ionic-php-activity-7135078243274997762-1ugx?utm_source=share&utm_medium=member_desktop',
       techs: [
         {
           name: 'Angular',
@@ -21,7 +22,7 @@ export class ProjectsComponent implements OnInit {
           color: 'danger',
         },
         {
-          name: 'Ionic Framework',
+          name: 'Ionic',
           logo: 'logo-ionic',
           color: 'primary',
         },
@@ -34,11 +35,6 @@ export class ProjectsComponent implements OnInit {
           name: 'Figma',
           logo: 'logo-figma',
           color: 'tertiary',
-        },
-        {
-          name: 'Chart.js',
-          logo: 'library',
-          color: 'warning',
         },
         {
           name: 'Sass',
@@ -60,7 +56,7 @@ export class ProjectsComponent implements OnInit {
           color: 'danger',
         },
         {
-          name: 'Ionic Framework',
+          name: 'Ionic',
           logo: 'logo-ionic',
           color: 'primary',
         },
@@ -89,14 +85,19 @@ export class ProjectsComponent implements OnInit {
       code: 'https://github.com/luizfiuzaa/projeto_figma',
       techs: [
         {
-          name: 'Angular',
-          logo: 'logo-angular',
-          color: 'danger',
+          name: 'HTML',
+          logo: 'logo-html5',
+          color: 'orange',
         },
         {
-          name: 'Ionic Framework',
-          logo: 'logo-ionic',
+          name: 'CSS',
+          logo: 'logo-css3',
           color: 'primary',
+        },
+        {
+          name: 'Bootstrap',
+          logo: 'layers',
+          color: 'tertiary',
         },
         {
           name: 'Git/GitHub',
@@ -108,10 +109,19 @@ export class ProjectsComponent implements OnInit {
           logo: 'logo-figma',
           color: 'tertiary',
         },
+      ],
+    },
+    {
+      image:
+        '../../../assets/images/images_projects/project_LoginPageTinder.png',
+      title: 'Tinder Login Page',
+      desc: 'Página de login do Tinder feita com Flutter, desafio do Jacob do Flutterando TV',
+      code: 'https://github.com/luizfiuzaa/tinder_flutter',
+      techs: [
         {
-          name: 'Sass',
-          logo: 'logo-sass',
-          color: 'danger',
+          name: 'Flutter',
+          logo: 'laptop-outline',
+          color: 'secondary',
         },
       ],
     },

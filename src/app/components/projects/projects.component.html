@@ -1,71 +1,72 @@
 <ion-col size="12">
   <ion-row
-    class="ion-align-self-center ion-justify-content-center ion-margin-top"
+    class="ion-align-self-center ion-justify-content-center ion-margin"
   >
     <ion-card-title>
       <ion-title mode="md" color="dark">Projetos</ion-title>
     </ion-card-title>
   </ion-row>
-</ion-col>
-
-<ion-col size="12">
   <ion-row>
     <ng-container *ngFor="let project of this.projects; let id = index">
-      <ion-col mode="ios" size-sm="12" size-md="6" size-lg="4">
+      <ion-col size-sm="12" size-md="6" size-lg="4">
         <ion-row>
-          <ion-card class="ion-h">
+          <ion-card mode="ios">
             <img alt="Silhouette of mountains" src="{{ project.image }}" />
             <ion-card-header>
-              <ion-card-title>{{ project.title }}</ion-card-title>
-              <ion-card-subtitle>
+              <ion-card-title mode="md">{{ project.title }}</ion-card-title>
+              <ion-card-subtitle mode="md">
                 <ng-container *ngFor="let tech of project.techs">
-                  <ion-chip color="{{ tech.color }}">
-                    <ion-icon name="{{ tech.logo }}"></ion-icon>
-                    <ion-label>{{ tech.name }}</ion-label>
-                  </ion-chip>
+                  <ng-container *ngIf="tech.color == 'orange'">
+                    <ion-chip
+                      id="html"
+                      color="{{ tech.color }}"
+                      style="background-color: #fc90242d"
+                    >
+                      <ion-icon name="{{ tech.logo }}"></ion-icon>
+                      <ion-label>{{ tech.name }}</ion-label>
+                    </ion-chip>
+                  </ng-container>
+                  <ng-container *ngIf="tech.color != 'orange'">
+                    <ion-chip color="{{ tech.color }}" id="hmtl">
+                      <ion-icon name="{{ tech.logo }}"></ion-icon>
+                      <ion-label>{{ tech.name }}</ion-label>
+                    </ion-chip>
+                  </ng-container>
                 </ng-container>
               </ion-card-subtitle>
             </ion-card-header>
 
             <ion-card-content>
-              {{ project.desc }}
+              <ion-row>
+                {{ project.desc }}
+              </ion-row>
 
               <ion-col size="12" sizeMd="6">
-                <div class="link_buttons">
-                  <ng-container *ngIf="project.deploy">
-                    <ion-button
-                      color="success"
-                      href="{{ project.deploy }}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      expand="full"
-                    >
-                      Ver Projeto
-                    </ion-button>
-                  </ng-container>
-                  <ng-container *ngIf="project.post">
-                    <ion-button
-                      color="primary"
-                      href="{{ project.post }}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      expand="full"
-                    >
-                      Ver Prostagem
-                    </ion-button>
-                  </ng-container>
-                  <ng-container *ngIf="project.code">
-                    <ion-button
-                      color="dark"
-                      href="{{ project.code }}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      expand="full"
-                    >
-                      Ver Código
-                    </ion-button>
-                  </ng-container>
-                </div>
+                <ng-container *ngIf="project.deploy">
+                  <ion-button
+                    mode="ios"
+                    color="success"
+                    href="{{ project.deploy }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    expand="full"
+                  >
+                    Ver Projeto
+                  </ion-button>
+                </ng-container>
+
+                <ng-container *ngIf="project.code">
+                  <ion-button
+                    mode="ios"
+                    color="dark"
+                    href="{{ project.code }}"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    expand="full"
+                  >
+                    Ver Código
+                  </ion-button>
+                </ng-container>
               </ion-col>
             </ion-card-content>
           </ion-card>

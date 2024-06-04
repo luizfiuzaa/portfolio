@@ -1,14 +1,15 @@
-
 ion-card {
   min-width: 268px;
   transform: translateY(auto);
   transition: all ease-in-out 0.3s;
-  ion-card-content{
-    min-height: 225px;
+  ion-card-content {
+    min-height: 250px;
+    ion-button {
+      border-radius: 15px;
+    }
   }
-  .link_buttons{margin-top: 5%;}
+}
 
-}
-ion-card:hover {
-  transform: translateY(-13px);
-}
+ion-chip {cursor: default;}
+
+ion-card:hover {transform: translateY(-13px);}
