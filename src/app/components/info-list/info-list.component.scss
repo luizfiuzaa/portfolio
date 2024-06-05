@@ -1,9 +1,8 @@
-.profile_images{
-  background: url('../../../assets/images/banner.jpg') no-repeat;
+.profile_images {
+  background: url("./assets/images/banner.jpg") no-repeat;
   background-size: 100% 100%;
   border-radius: 15px;
 }
-
 
 .profile_pic {
   margin: 3%;
@@ -13,16 +12,16 @@
   border: 3px solid var(--ion-color-light);
 }
 
-ion-card-title{
+ion-card-title {
   font-size: 1.7em;
 }
 
-ion-card-subtitle{
+ion-card-subtitle {
   font-size: 1.3em;
 }
 
 @media (max-width: 700px) {
-  .profile_pic{
+  .profile_pic {
     width: 45%;
   }
 }
