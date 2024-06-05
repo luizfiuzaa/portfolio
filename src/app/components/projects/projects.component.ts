@@ -10,7 +10,7 @@ import { Project } from 'src/app/interface/project';
 export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {
-      image: '../../../assets/images/images_projects/project_JEV-A.png',
+      image: './assets/images/images_projects/project_JEV-A.png',
       title: 'Josy Espaço VIP',
       desc: 'Sistema de agendamento e gerenciamento de serviços e clientes, para o salão de beleza Josy Espaço VIP.',
       code: 'https://github.com/luizfiuzaa/tcc_josy_espaco_vip',
@@ -43,7 +43,7 @@ export class ProjectsComponent implements OnInit {
       ],
     },
     {
-      image: '../../../assets/images/images_projects/project_Linkstation.png',
+      image: './assets/images/images_projects/project_Linkstation.png',
       title: 'LinkStation',
       desc: 'Aplicação indexador dos meus links de acesso, utilizando Figma para o Design da interface, Angular e Ionic para a contrução da página',
       deploy: '',
@@ -77,7 +77,7 @@ export class ProjectsComponent implements OnInit {
       ],
     },
     {
-      image: '../../../assets/images/images_projects/project_LoginPage.png',
+      image: './assets/images/images_projects/project_LoginPage.png',
       title: 'Login Page',
       desc: 'Página de login feita com HTML, CSS e Bootstrap. Utilizando Figma para auxiliar no design da interface',
       deploy: 'https://luizfiuzaa.github.io/projeto_figma/',
@@ -111,8 +111,7 @@ export class ProjectsComponent implements OnInit {
       ],
     },
     {
-      image:
-        '../../../assets/images/images_projects/project_LoginPageTinder.png',
+      image: './assets/images/images_projects/project_LoginPageTinder.png',
       title: 'Tinder Login Page',
       desc: 'Página de login do Tinder feita com Flutter, desafio do Jacob do Flutterando TV',
       code: 'https://github.com/luizfiuzaa/tinder_flutter',
