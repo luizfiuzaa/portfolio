@@ -3,11 +3,10 @@ ion-card {
   transform: translateY(auto);
   transition: all ease-in-out 0.3s;
   ion-card-content {
-    min-height: 250px;
-    ion-button {
-      border-radius: 15px;
-    }
+    min-height: 220px;
+    max-height: 220px;
   }
+
 }
 
 ion-chip {cursor: default;}

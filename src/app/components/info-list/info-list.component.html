@@ -1,6 +1,9 @@
-<div class="profile_images">
-  <img class="profile_pic " src="https://avatars.githubusercontent.com/u/96220499?v=4"
-    alt="Foto de Luiz Fiuza sorrindo para a foto, sentado em uma cadeira verde, usando um óculos de armação preta juntamente com o uniforme preto da Etec Sales Gomes e em seu pescoço um crachá de identificação da Campus Party 15 Brasil" />
+<div class="profile_images ion-padding">
+  <img
+    class="profile_pic"
+    src="https://avatars.githubusercontent.com/u/96220499?v=4"
+    alt="Foto de Luiz Fiuza sorrindo para a foto, sentado em uma cadeira verde, usando um óculos de armação preta juntamente com o uniforme preto da Etec Sales Gomes e em seu pescoço um crachá de identificação da Campus Party 15 Brasil"
+  />
 </div>
 
 <ion-card-header>
@@ -14,15 +17,27 @@
   <ion-list-header>
     <ion-label>Links/Contato/Currículo</ion-label>
   </ion-list-header>
-  <ng-container *ngFor="let link of links; let idLinks = index;">
-    <ion-item mode="ios" href="{{link.uri}}" target="_blank" rel="noopener noreferrer">
-      <ion-icon name="{{link.logo}}" color="{{link.color}}"></ion-icon>
-      {{link.text}}
+  <ng-container *ngFor="let link of links; let idLinks = index">
+    <ion-item
+      mode="ios"
+      href="{{ link.uri }}"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <ion-icon name="{{ link.logo }}" color="{{ link.color }}" class="ion-margin"></ion-icon>
+      {{ link.text }}
     </ion-item>
   </ng-container>
 </ion-list>
 <ion-col size="12">
-  <ion-button mode="ios" expand="full" size="default" color="success">
+  <ion-button
+    href="../../../assets/download/Currículo-Luiz-Fiuza.pdf"
+    download="Currículo-Luiz-Fiuza.pdf"
+    mode="ios"
+    expand="full"
+    size="default"
+    color="success"
+  >
     Baixar Currículo
     <ion-icon slot="end" name="cloud-download-sharp"></ion-icon>
   </ion-button>

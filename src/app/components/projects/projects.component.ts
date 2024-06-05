@@ -11,10 +11,9 @@ export class ProjectsComponent implements OnInit {
   projects: Project[] = [
     {
       image: '../../../assets/images/images_projects/project_JEV-A.png',
-      title: 'Josy Espaço VIP - Agendamentos',
+      title: 'Josy Espaço VIP',
       desc: 'Sistema de agendamento e gerenciamento de serviços e clientes, para o salão de beleza Josy Espaço VIP.',
-      deploy:
-        'https://www.linkedin.com/posts/luiz-fiuza-_angular-ionic-php-activity-7135078243274997762-1ugx?utm_source=share&utm_medium=member_desktop',
+      code: 'https://github.com/luizfiuzaa/tcc_josy_espaco_vip',
       techs: [
         {
           name: 'Angular',
@@ -48,7 +47,7 @@ export class ProjectsComponent implements OnInit {
       title: 'LinkStation',
       desc: 'Aplicação indexador dos meus links de acesso, utilizando Figma para o Design da interface, Angular e Ionic para a contrução da página',
       deploy: '',
-      code: '',
+      code: 'https://github.com/luizfiuzaa/linkstation',
       techs: [
         {
           name: 'Angular',

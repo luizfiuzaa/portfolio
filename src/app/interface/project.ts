@@ -1,8 +1,4 @@
-export interface Tech {
-  name: string;
-  logo: string;
-  color: string;
-}
+import { Techs } from 'src/app/interface/techs';
 
 export interface Project {
   image: string;
@@ -10,5 +6,5 @@ export interface Project {
   desc: string;
   deploy?: string;
   code?: string;
-  techs: Tech[];
+  techs: Techs[];
 }
